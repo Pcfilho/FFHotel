@@ -1,0 +1,13 @@
+.cardSpacing {
+    width: 18rem;
+    margin: 2rem;
+}
+
+.subtitleSpacing {
+    margin-top: 12px;
+}
+
+.priceSpacing {
+    margin-top: 4px;
+    font-size: small;
+}
