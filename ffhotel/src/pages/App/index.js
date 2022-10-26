@@ -1,10 +1,10 @@
 
-import { Favoritos } from '../Favoritos';
+import { Grupos } from './Grupos';
 import './styles.css';
 
 export function App() {
   return (
-    <Favoritos></Favoritos>
+    <Grupos></Grupos>
     
   );
 }
