@@ -17,13 +17,21 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 10vw;
+    width: 15vw;
 }
 
 .list-my {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90vw;
+    width: 85vw;
+}
 
+.accordio-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import './styles.css';
 
-export const InterestedCard = ({ name, image }) => {
+export const InterestedCard = ({ name, image, desc }) => {
     return (
         <div className='container'>
             <div className='image'>
@@ -18,7 +18,7 @@ export const InterestedCard = ({ name, image }) => {
                 </div>
                 <div>
                     <p>
-                        Gosto muito de ir em festas
+                       {desc}
                     </p>
                 </div>
             </div>

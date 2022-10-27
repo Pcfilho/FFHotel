@@ -3,6 +3,13 @@
     margin: 2rem;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .subtitleSpacing {
     margin-top: 12px;
 }

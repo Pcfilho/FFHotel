@@ -17,13 +17,11 @@ export const Menu = () => {
             </Link>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Grupos</Nav.Link>
-            <Nav.Link href="#pricing">Favoritos</Nav.Link>
-            <Nav.Link onClick={() => navigate('/cadastro')}>
-            Cadastro
-
-            </Nav.Link>
+            <Nav.Link onClick={() => navigate('/')}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate('/grupos')}>Grupos</Nav.Link>
+            <Nav.Link onClick={() => navigate('/favoritos')}>Favoritos</Nav.Link>
+            <Nav.Link onClick={() => navigate('/perfil')}>Perfil</Nav.Link>
+            <Nav.Link onClick={() => navigate('/login')}>Login</Nav.Link>
             
             
           </Nav>

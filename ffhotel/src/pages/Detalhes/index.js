@@ -5,13 +5,15 @@ import { Star, StarFill, ArrowRight, ArrowLeft, PersonFill, Person } from 'react
 import Image from 'react-bootstrap';
 import './styles.css'
 import { InterestedCard } from '../../components/InterestedCard';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export const Detalhes = () => {
     const [isFavorite, setIsFavorite] = useState(false);
+    const navigate = useNavigate();
     const [active, setActive] = useState(1);
-    const handleClick = () => { };
+    const handleClick = (url) => navigate(url);
     const items = [1, 2, 3];
     const images = ['https://www.larahotel.com.br/wp-content/uploads/lara_hotel-homepage-Hotel-1551.jpg', 'https://i0.wp.com/blogandarilho.com.br/wp-content/uploads/2017/06/Laguna-Blu-12.jpg?fit=900%2C600&ssl=1', 'http://d2t6k95walcly3.cloudfront.net/unsafe/840x460/anuncios/casa-prainha-pousada-aquiraz-ceara-55a55074b559d.jpg']
 
@@ -89,9 +91,9 @@ export const Detalhes = () => {
                                         />
                                     </InputGroup>
 
-                                    <Button className="mb-3" variant="primary">Ver grupos</Button>
-                                    <Button className="mb-3" variant="primary">Criar grupo</Button>
-                                    <Button className="mb-3" variant="primary">Reservar</Button>
+                                    <Button className="mb-3" variant="primary" onClick={() => handleClick('/grupos')}>Ver grupos</Button>
+                                    <Button className="mb-3" variant="primary" onClick={() => handleClick('/grupo')}>Criar grupo</Button>
+                                    <Button className="mb-3" variant="primary" onClick={() => handleClick('/')}>Reservar</Button>
                                 </div>
                             </div>
                         </div>
@@ -113,10 +115,10 @@ export const Detalhes = () => {
                         <h2>Interessados</h2>
                     </div>
                     <div>
-                        <InterestedCard name='Joao' image='https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'           />
-                        <InterestedCard name='Carlos'image='https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
-                        <InterestedCard name='Maria' image='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
-                        <InterestedCard name='Felipe' image='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'/>
+                        <InterestedCard name='Joao' image='https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' desc="Gosto muito de ir em festas"/>
+                        <InterestedCard name='Carlos'image='https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' desc="Vivendo e viajando!"/>
+                        <InterestedCard name='Maria' image='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'desc="Gosto muito de ir em festas"/>
+                        <InterestedCard name='Felipe' image='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' desc="Adoro viajar..."/>
                     </div>
                 </div>                   
             </div>

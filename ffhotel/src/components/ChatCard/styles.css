@@ -1,0 +1,29 @@
+.my-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 18px;
+}
+
+.my-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 12px;
+}
+
+.my-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    margin-bottom: 5px;
+}

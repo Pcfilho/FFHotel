@@ -7,13 +7,13 @@ import './styles.css';
 export const CardGroup = ({ groupName, membersNumber, localName, dateRange, price, isFavorite }) => {
     const [isFavorte, setIsFavorite] = useState(isFavorite);
     const handleClick = () => {
-      navigate("/detalhes")
+      navigate("/grupo")
     };
     const navigate = useNavigate();
  
     return (
-        <Card className='cardSpacing' onClick={() => handleClick()}>
-        <Card.Img variant="top" src="https://www.larahotel.com.br/wp-content/uploads/lara_hotel-homepage-Hotel-1551.jpg" />
+        <Card className='cardSpacing'>
+        <Card.Img variant="top" src="https://www.larahotel.com.br/wp-content/uploads/lara_hotel-homepage-Hotel-1551.jpg" onClick={() => handleClick()}/>
         <Card.Body>
           <div className='header-my'>
             <Card.Title className='align-text-bottom'>{groupName}</Card.Title>

@@ -44,6 +44,11 @@
   
 }
 
+.inputs {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .cadastrese {
 
   text-align: center;
@@ -57,12 +62,22 @@
 }
 
 .google {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 92px;
+  align-items: center;
   width: 345px;
   height: 54px;
 
   background: #FFFFFF;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
   border-radius: 10px;
+}
+
+.googleTitle{
+  margin-left: 12px;
 }
 
 .entrar {
@@ -100,6 +115,7 @@
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;
+  cursor: pointer;
 }
 
 .card {
