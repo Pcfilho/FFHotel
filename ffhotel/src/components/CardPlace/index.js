@@ -1,15 +1,21 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './styles.css';
 
 export const CardPlace = ({ localName, dateRange, price }) => {
+  const handleClick = () => {
+    navigate("/detalhes")
+  };
+  const navigate = useNavigate();
+
     return (
-        <Card className='cardSpacing'>
-        <Card.Img variant="top" src="https://www.larahotel.com.br/wp-content/uploads/lara_hotel-homepage-Hotel-1551.jpg" />
-        <Card.Body>
-          <Card.Title >{localName}</Card.Title>
-          <Card.Subtitle className='subtitleSpacing'>{dateRange}</Card.Subtitle>
-          <Card.Text className='priceSpacing'>{`R$${price} por noite`}</Card.Text>
+        <Card className='cardSpacing' onClick={() => handleClick()}>
+        <Card.Img variant="top" src="https://i0.wp.com/blogandarilho.com.br/wp-content/uploads/2017/06/Laguna-Blu-12.jpg?fit=900%2C600&ssl=1" />
+        <Card.Body className='body'>
+          <Card.Title className='mb-3' >{localName}</Card.Title>
+          <Card.Subtitle className='mb-3'>{dateRange}</Card.Subtitle>
+          <Card.Text className='mb-3'>{`R$${price} por noite`}</Card.Text>
         </Card.Body>
       </Card>
     )

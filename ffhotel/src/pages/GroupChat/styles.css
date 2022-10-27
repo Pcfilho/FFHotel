@@ -1,0 +1,81 @@
+.my-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+}
+
+.my-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.my-left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    background-color: #0A58CA;
+    padding: 24px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.my-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.my-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.my-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 18px;
+}
+
+.my-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 12px;
+}
+
+.my-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    margin-bottom: 5px;
+}
+
+.my-text {
+    color: white;
+}

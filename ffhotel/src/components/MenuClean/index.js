@@ -1,11 +1,18 @@
 import React from 'react';
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link, useNavigate } from 'react-router-dom';
 
 export const MenuClean = () => {
+    const navigate = useNavigate();
+
     return (
       <Navbar className="navbar navbar-dark bg-primary" fixed='top'>
         <Container className="d-flex align-content-start">
-          <Navbar.Brand href="#home">FFHotel</Navbar.Brand>
+          <Navbar.Brand>
+            <Nav.Link onClick={() => navigate('/')}>
+              FFHotel
+            </Nav.Link>
+          </Navbar.Brand>
         </Container>
       </Navbar>
     )

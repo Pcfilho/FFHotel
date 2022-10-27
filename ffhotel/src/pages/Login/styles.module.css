@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F1F1F1;
+}
+
+.cardazul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+  background: #0A58CA;
+  border-radius: 0 40px 40px 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.bemvindo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.bcadastrese {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 51px;
+  width: 364px;
+  
+}
+
+.inputs {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cadastrese {
+
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0;
+
+  color: #0A58CA;
+}
+
+.google {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 92px;
+  align-items: center;
+  width: 345px;
+  height: 54px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+  border-radius: 10px;
+}
+
+.googleTitle{
+  margin-left: 12px;
+}
+
+.entrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  height: 40px;
+
+  background: #0A58CA;
+  border-radius: 4px;
+}
+
+.entrarinbotao {
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 30vh;
+  width: 30vw;
+  background-size:contain;
+  background: url(/src/assets/logoff.png);
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  box-sizing: border-box
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 50vw;
+}
