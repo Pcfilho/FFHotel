@@ -15,6 +15,7 @@ app.put('/user', updateUser);
 
 app.delete('/user', deleteUser);
 
+
 app.get('/hotel', getHotel);
 
 app.get('/hotel/:id', getHotelById);

@@ -36,7 +36,8 @@ exports.createReserva = async (req, res) => {
         horario: req.body.horario,
         hotelId: req.body.hotelId,
         noites: req.body.noites,
-        preco: req.body.preco
+        preco: req.body.preco,
+        userId: req.body.userId,
       };
       const reservaDb = db.collection('reserva'); 
       const response = await reservaDb.doc(id).set(reservaJson);
@@ -56,13 +57,15 @@ exports.updateReserva = async(req, res) => {
         const newHotelId = req.body.hotelId;
         const newNoites = req.body.noites;
         const newPreco = req.body.preco;
+        const newUser = req.body.userId;
 
         const reservaRef = await db.collection("reserva").doc(id)
         .update({
             horario: newHorario,
             hotelId: newHotelId,
             noites: newNoites,
-            preco: newPreco
+            preco: newPreco,
+            userId: newUser
         });
         return res.send(reservaRef);
           
