@@ -14,7 +14,7 @@ exports.getUsers = async (req, res) => {
     } catch (error) {
         return res
         .status(500)
-        .json({ general: "Something went wrong, please try again"});          
+        .json({ general: "Algo não deu certo!"});          
     }
 };
 
