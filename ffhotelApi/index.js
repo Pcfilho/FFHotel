@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.json());
-const PORT = process.env.PORT || 5050
+const PORT = 5050
 const { getUsers, createUser, getUserById, updateUser, deleteUser } = require('./handlers/users')
 
 
